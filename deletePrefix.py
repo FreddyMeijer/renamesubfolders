@@ -11,10 +11,10 @@ def removePrefix(folderPath, prefix, logFile):
                 newSubfolder = subfolder[len(prefix):]
                 newPath = os.path.join(folderPath, newSubfolder)
                 os.rename(oldPath, newPath)
-                log.write(f"'{subfolder}' is hersteld naar '{newSubfolder}'\n")
+                log.write(f"'{subfolder}' renamed to '{newSubfolder}'\n")
 
 if __name__ == "__main__":
     folderPath = r"C:\Users\fredd\OneDrive - Servicepunt 71\Playgrounds\Repros\RenameSubfolders"
     prefix = "test - kids - "
-    logFile = folderPath + "\logfile.log"
+    logFile = folderPath + "\logfile_delete_prefix.log"
     removePrefix(folderPath, prefix, logFile)

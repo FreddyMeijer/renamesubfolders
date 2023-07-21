@@ -10,10 +10,10 @@ def addPrefix(folderPath, prefix, logFile):
             newSubfolder = prefix + subfolder
             newPath = os.path.join(folderPath, newSubfolder)
             os.rename(oldPath, newPath)
-            log.write(f"'{subfolder}' is hernoemd naar '{newSubfolder}'\n")
+            log.write(f"'{subfolder}' renamed to '{newSubfolder}'\n")
 
 if __name__ == "__main__":
     folderPath = r"D:\Naaipatronen-categorie\Sofilantjes"
     prefix = "Sofilantjes - "
-    logFile = folderPath + "\logfile.log"
+    logFile = folderPath + "\logfile_add_prefix.log"
     addPrefix(folderPath, prefix, logFile)
