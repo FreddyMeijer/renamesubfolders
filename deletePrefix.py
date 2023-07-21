@@ -14,7 +14,7 @@ def removePrefix(folderPath, prefix, logFile):
                 log.write(f"'{subfolder}' renamed to '{newSubfolder}'\n")
 
 if __name__ == "__main__":
-    folderPath = r"C:\Users\fredd\OneDrive - Servicepunt 71\Playgrounds\Repros\RenameSubfolders"
-    prefix = "test - kids - "
+    folderPath = r"PATH"
+    prefix = "PREFIX"
     logFile = folderPath + "\logfile_delete_prefix.log"
     removePrefix(folderPath, prefix, logFile)

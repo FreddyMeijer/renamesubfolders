@@ -13,7 +13,7 @@ def addPrefix(folderPath, prefix, logFile):
             log.write(f"'{subfolder}' renamed to '{newSubfolder}'\n")
 
 if __name__ == "__main__":
-    folderPath = r"D:\Naaipatronen-categorie\Sofilantjes"
-    prefix = "Sofilantjes - "
+    folderPath = r"PATH"
+    prefix = "PREFIX"
     logFile = folderPath + "\logfile_add_prefix.log"
     addPrefix(folderPath, prefix, logFile)
