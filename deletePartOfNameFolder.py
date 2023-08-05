@@ -27,5 +27,5 @@ def removeString(folderPath, string, logFile):
 if __name__ == "__main__":
     folderPath = selectFolder()
     string = input("Welke woord moet uit de mapnaam verwijderd worden? ")
-    logFile = folderPath + "\logfile_delete_woord.log"
+    logFile = folderPath + "\logfile_delete_folder_woord.log"
     removeString(folderPath, string, logFile)
