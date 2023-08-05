@@ -15,6 +15,13 @@ The user will be asked to select a rootfolder in which the folders will be renam
 ## deletePrefix.py
 The user will be asked to select a rootfolder in which the folders will be renamed. After selection the user is asked to define a prefix (in terminal). The deletion of a part of the name (most likely the prefix) will be done from character one of the subfoldername. So for example:
 
-I have a subfolder with the following name *Freddy_personal_finance* and I run the script. I change the prefix on line 18 to *_personal_*. Nothing will happen. The correct prefix would be *Freddy_personal_*. If the script is executed with the correct prefix, the new name will be *finance*
+I have a subfolder with the following name *Freddy_personal_finance* and I run the script. The string I entered is *_personal_*. Nothing will happen. The correct prefix would be *Freddy_personal_*. If the script is executed with the correct prefix, the new name will be *finance*
 
 In the rootfolder there will be a logfile created with the name *logfile_delete_prefix.log*
+
+## deletePartOfName.py
+The user will be asked to select a rootfolder in which the folders will be renamed. After selection the user is asked to define a string (in terminal). The deletion of a part of the name will be done when the string is found in the name. So for example:
+
+I have a subfolder with the following name *Freddy_personal_finance* and I run the script. The string I entered is *_personal_*, so the new name will be *Freddyfinance*
+
+In the rootfolder there will be a logfile created with the name *logfile_delete_woord.log*
