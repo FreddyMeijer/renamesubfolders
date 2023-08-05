@@ -1,5 +1,16 @@
 import os
 import sys
+import tkinter as tk
+from tkinter import filedialog
+
+
+def selectFolder():
+    folder = filedialog.askdirectory(
+        title="Selecteer een map waarin de submapen hernoemd moeten worden"
+    )
+    if folder:
+        return folder
+
 
 def addPrefix(folderPath, prefix, logFile):
     with open(logFile, "w") as log:
@@ -10,10 +21,11 @@ def addPrefix(folderPath, prefix, logFile):
             newSubfolder = prefix + subfolder
             newPath = os.path.join(folderPath, newSubfolder)
             os.rename(oldPath, newPath)
-            log.write(f"'{subfolder}' renamed to '{newSubfolder}'\n")
+            log.write(f"'{subfolder}' hernoemd naar '{newSubfolder}'\n")
+
 
 if __name__ == "__main__":
-    folderPath = r"PATH"
-    prefix = "PREFIX"
+    folderPath = selectFolder()
+    prefix = input("Welke prefix moeten de mappen krijgen? ")
     logFile = folderPath + "\logfile_add_prefix.log"
     addPrefix(folderPath, prefix, logFile)
