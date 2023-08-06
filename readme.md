@@ -9,7 +9,7 @@ To install the renamesubfolders all you need to do is:
 - Open the folder in which the git was cloned
 - Run the desired function by using e.g. `python3 addPrefix.py`
 
-## addPrefix (folder only)
+## addPrefix (folder and file)
 The user will be asked to select a rootfolder in which the folders will be renamed. After selection the user is asked to define a prefix (in terminal). After executing there will be a logfile created in the rootfolder with the name *logfile_add_prefix.log*
 
 ## deletePartOfName (folder and file)
